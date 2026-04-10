@@ -1,0 +1,62 @@
+/* Brand Colors  and text style*/
+:root {
+  --acs-green: #4F7942; 
+  --acs-white: #ffffff;
+  --acs-light-green: #f1f8f0;
+}
+
+.bg-acs-green {
+  background-color: var(--acs-green) !important;
+}
+.bg-acs-light-green {
+  background-color: var(--acs-light-green) !important;
+}
+.bg-acs-dark {
+  background-color: #0d170d !important; /* A very dark, sophisticated forest green */
+}
+
+.text-acs {
+  color: var(--acs-green) !important; 
+}
+.text-acs-light-green {
+  color: var(--acs-light-green) !important; 
+}
+.text-acs-grey {
+  color: #adb5bd !important; /* Light grey for the copyright text */
+}
+
+
+
+/* Products */
+#products img {
+    object-fit: contain;
+    height : 200px;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--acs-light-green);
+}
+
+#product .fa-cart-plus:hover {
+    color: var(--acs-green);
+}
+
+
+
+
+/* Footer styling */
+.footer-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #a3cfbb !important; /* Mint green on hover */
+  transform: translateY(-3px);
+  display: inline-block;
+}
+
+/* Ensure links in the middle also have a nice hover */
+footer ul li a:hover {
+  color: #a3cfbb !important;
+}
