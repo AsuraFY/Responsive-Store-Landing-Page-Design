@@ -25,6 +25,20 @@
   color: #adb5bd !important; /* Light grey for the copyright text */
 }
 
+/* header - navigation */
+@media (max-width: 991.98px) {
+  /* This ensures the toggler and cart take up the same space to center the brand name */
+  .navbar-toggler, .cart-container {
+    width: 50px; 
+    display: flex;
+    justify-content: center;
+  }
+}
+.offcanvas {
+    height: auto !important;
+    max-height: 100vh;
+}
+
 
 
 /* Products */
@@ -38,8 +52,21 @@
     background-color: var(--acs-light-green);
 }
 
-#product .fa-cart-plus:hover {
+#products .fa-cart-plus {
+    font-size: 1.2rem;
     color: var(--acs-green);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%; /* Makes the hover area a circle */
+}
+
+
+#products .fa-cart-plus:hover {
+    background-color: var(--acs-light-green); /* Subtle background highlight */
+    color: var(--acs-dark);                   /* Darken the icon color */
+    transform: translateY(-3px) scale(1.1);   /* Lift it up and grow it slightly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 
